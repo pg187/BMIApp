@@ -13,6 +13,7 @@
 		3FDC2A0523A1B622008CFD62 /* BMIApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3FDC2A0323A1B622008CFD62 /* BMIApp.xcdatamodeld */; };
 		3FDC2A0723A1B623008CFD62 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3FDC2A0623A1B623008CFD62 /* Assets.xcassets */; };
 		3FDC2A0A23A1B623008CFD62 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FDC2A0823A1B623008CFD62 /* LaunchScreen.storyboard */; };
+		3FDC2A1623A1DB36008CFD62 /* BmiProgressController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FDC2A1523A1DB36008CFD62 /* BmiProgressController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		3FDC2A0623A1B623008CFD62 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3FDC2A0923A1B623008CFD62 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3FDC2A0B23A1B623008CFD62 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3FDC2A1523A1DB36008CFD62 /* BmiProgressController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BmiProgressController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 			children = (
 				3FDC29FC23A1B622008CFD62 /* AppDelegate.swift */,
 				3FDC29FE23A1B622008CFD62 /* ViewController.swift */,
+				3FDC2A1523A1DB36008CFD62 /* BmiProgressController.swift */,
 				3FDC2A0023A1B622008CFD62 /* Main.storyboard */,
 				3FDC2A0623A1B623008CFD62 /* Assets.xcassets */,
 				3FDC2A0823A1B623008CFD62 /* LaunchScreen.storyboard */,
@@ -141,6 +144,7 @@
 				3FDC29FF23A1B622008CFD62 /* ViewController.swift in Sources */,
 				3FDC2A0523A1B622008CFD62 /* BMIApp.xcdatamodeld in Sources */,
 				3FDC29FD23A1B622008CFD62 /* AppDelegate.swift in Sources */,
+				3FDC2A1623A1DB36008CFD62 /* BmiProgressController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

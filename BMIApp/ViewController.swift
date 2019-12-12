@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import CoreData
 
 class ViewController: UIViewController, UITextFieldDelegate {
     private var calculatedBmi:Double = 0.0
@@ -29,9 +30,10 @@ class ViewController: UIViewController, UITextFieldDelegate {
         textAge.delegate = self
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-
+        
     }
-
+    
+    //bmi is calculated according to the
     @IBAction func calculateBMI(_ sender: Any) {
         weight = textWeight.text!
         height = textheight.text!
@@ -86,7 +88,20 @@ class ViewController: UIViewController, UITextFieldDelegate {
     
     @IBAction func doneButton(_ sender: Any) {
         
-        
+        if let context = (UIApplication.shared.delegate as? AppDelegate)?.persistentContainer.viewContext
+        {
+            let bmi = BmiTable(entity: BmiTable.entity(), insertInto: context)
+            if let name = textName.text
+            {
+                bmi.name = name
+                bmi.age = textAge.text
+                bmi.gender = textGender.text
+                bmi.height = textheight.text
+                bmi.weight = textWeight.text
+                bmi.bmi = calculatedBmi
+            }
+            try? context.save()
+        }
     }
 }
 
