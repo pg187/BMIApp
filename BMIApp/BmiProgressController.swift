@@ -43,10 +43,17 @@ class BmiProgressController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
 
         let bmi = bmis[indexPath.row]
-        cell.textLabel?.text = bmi.weight
-        cell.detailTextLabel?.text = String(bmi.bmi)
+        //display bmi
+        cell.textLabel?.text = "BMI: /(String(bmi.bmi))"
         return cell
     }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        
+        
+    }
+    
  
 
     /*
