@@ -43,8 +43,11 @@ class BmiProgressController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
 
         let bmi = bmis[indexPath.row]
+        let weight = bmi.weight
+        let bmiscore = String(bmi.bmi)
+        let display = "Weight: \(weight!) BMI: \(bmiscore)"
         //display bmi
-        cell.textLabel?.text = "BMI: /(String(bmi.bmi))"
+        cell.textLabel?.text = display
         return cell
     }
     
@@ -54,7 +57,9 @@ class BmiProgressController: UITableViewController {
         
     }
     
- 
+    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        
+    }
 
     /*
     // Override to support conditional editing of the table view.
